@@ -1,0 +1,28 @@
+form{
+    font-size: 16px;
+    text-align: center;
+    display: block;
+}
+
+input{
+    box-sizing: border-box;
+    display: block;
+    width: 250px;
+    height: 30px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Calibri";
+}
+
+h1{
+    display: block;
+    text-align: center;
+}
+
+button{
+    padding: 10px;
+    background: #e3e3e3;
+    border: unset;
+    cursor: pointer;
+}

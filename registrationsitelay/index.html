@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <h1>Регистрация на сайте</h1>
+    <form action="connectBD/registration.php" method="POST">
+        <label for="name">Введите имя пользователя:</label>
+        <input type="text" name="name" id="name" placeholder="Логин" maxlength="30" required>
+
+        <label for="email">Введите вашу почту: </label>
+        <input type="email" name="email" id="email" placeholder="В формате: email@mail.ru" maxlength="30" required>
+
+        <label for="pass">Введите пароль:</label>
+        <input type="password" name="pass" id="pass" placeholder="В формате: Ab123bA"
+        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,16}" minlength="6" required="Пароль должен содержать только латинские буквы и цифры">
+
+        <label for="pass">Подтвердите пароль:</label>
+        <input type="password" name="pass_right" id="pass" placeholder="Пароль" minlength="6" required>
+
+        <button type="submit">Зарегистрироваться</button>
+        <p>Есть аккаунт? - <a href="avtorization.html">Войти</a></p>
+
+    </form>
+    
+</body>
+</html>
